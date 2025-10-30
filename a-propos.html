@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - CuproFlex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        copper: {
+                            400: '#E8A87C',
+                            500: '#D4956C',
+                            600: '#C17D5A',
+                            700: '#B87333',
+                        },
+                        dark: {
+                            900: '#0A0A0A',
+                            800: '#121212',
+                            700: '#1A1A1A',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-dark-800 border-b border-copper-700/20 fixed w-full z-50 backdrop-blur-sm bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-display font-bold text-copper-500">Cupro<span class="text-white">Flex</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Accueil</a>
+                    <a href="capacites.html" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Capacités</a>
+                    <a href="produits.html" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Produits</a>
+                    <a href="a-propos.html" class="text-copper-500 font-sans font-light tracking-wide transition-colors">À propos</a>
+                    <a href="index.html#contact" class="bg-copper-600 text-white px-8 py-3 border border-copper-600 hover:bg-transparent hover:text-copper-500 transition-all duration-300 font-sans tracking-wider">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-dark-900 text-white pt-40 pb-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase">Notre Histoire</span>
+                <h1 class="text-5xl md:text-7xl font-display font-bold mt-6 mb-8">À propos de CuproFlex</h1>
+                <div class="w-24 h-px bg-copper-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto font-light">Plus de 15 ans d'excellence dans le cintrage de tubes en cuivre</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Notre Histoire -->
+    <section class="py-32 bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-32">
+                <div>
+                    <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Depuis 2010</span>
+                    <h2 class="text-4xl font-display font-bold text-white mb-6">Notre Histoire</h2>
+                    <p class="text-gray-400 font-light leading-relaxed text-lg mb-6">
+                        Fondée en 2010, CuproFlex est née de la passion de trois ingénieurs pour l'excellence dans le travail du cuivre. Notre vision était simple : allier la précision de la technologie moderne au savoir-faire artisanal traditionnel.
+                    </p>
+                    <p class="text-gray-400 font-light leading-relaxed text-lg mb-6">
+                        Au fil des années, nous avons développé une expertise unique dans le cintrage de tubes en cuivre pour le secteur CVC, devenant un partenaire de confiance pour les plus grands acteurs de l'industrie.
+                    </p>
+                    <p class="text-gray-400 font-light leading-relaxed text-lg">
+                        Aujourd'hui, CuproFlex c'est une équipe de 25 personnes passionnées, un parc machines de dernière génération, et des milliers de projets réussis à travers l'Europe.
+                    </p>
+                </div>
+                <div class="bg-dark-700 border border-copper-700/20 p-2">
+                    <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-dark-800 to-dark-900 flex items-center justify-center h-96">
+                        <i class="fas fa-industry text-9xl text-copper-500/20"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nos Valeurs -->
+            <div class="mb-32">
+                <div class="text-center mb-16">
+                    <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Ce qui nous guide</span>
+                    <h2 class="text-4xl font-display font-bold text-white mb-6">Nos Valeurs</h2>
+                    <div class="w-24 h-px bg-copper-500 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-dark-700 border border-copper-700/20 p-10 text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full border-2 border-copper-500 flex items-center justify-center">
+                            <i class="fas fa-award text-3xl text-copper-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold text-white mb-4">Excellence</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Nous visons la perfection dans chaque projet, du plus simple au plus complexe.</p>
+                    </div>
+                    <div class="bg-dark-700 border border-copper-700/20 p-10 text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full border-2 border-copper-500 flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-3xl text-copper-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold text-white mb-4">Innovation</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Nous investissons continuellement dans les technologies les plus avancées.</p>
+                    </div>
+                    <div class="bg-dark-700 border border-copper-700/20 p-10 text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full border-2 border-copper-500 flex items-center justify-center">
+                            <i class="fas fa-handshake text-3xl text-copper-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold text-white mb-4">Partenariat</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Nous construisons des relations durables basées sur la confiance et la transparence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chiffres Clés -->
+            <div class="bg-gradient-to-br from-copper-700 via-copper-600 to-copper-700 p-16 text-white">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-display font-bold mb-4">CuproFlex en chiffres</h2>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl font-display font-bold mb-2">15+</div>
+                        <p class="text-lg font-light">Années d'expérience</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-display font-bold mb-2">5000+</div>
+                        <p class="text-lg font-light">Projets réalisés</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-display font-bold mb-2">25</div>
+                        <p class="text-lg font-light">Collaborateurs</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-display font-bold mb-2">100%</div>
+                        <p class="text-lg font-light">Satisfaction client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Équipe -->
+    <section class="py-32 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Les experts</span>
+                <h2 class="text-4xl font-display font-bold text-white mb-6">Notre Équipe</h2>
+                <div class="w-24 h-px bg-copper-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto font-light">Une équipe passionnée et qualifiée à votre service</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-dark-800 border border-copper-700/20 overflow-hidden group">
+                    <div class="h-80 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-8xl text-copper-500/30"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold text-white mb-2">Direction</h3>
+                        <p class="text-copper-500 mb-4 font-sans tracking-wide">Leadership & Vision</p>
+                        <p class="text-gray-400 font-light">Une direction engagée dans l'excellence et l'innovation continue.</p>
+                    </div>
+                </div>
+                <div class="bg-dark-800 border border-copper-700/20 overflow-hidden group">
+                    <div class="h-80 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center">
+                        <i class="fas fa-hard-hat text-8xl text-copper-500/30"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold text-white mb-2">Production</h3>
+                        <p class="text-copper-500 mb-4 font-sans tracking-wide">Expertise Technique</p>
+                        <p class="text-gray-400 font-light">Des techniciens qualifiés maîtrisant les technologies les plus avancées.</p>
+                    </div>
+                </div>
+                <div class="bg-dark-800 border border-copper-700/20 overflow-hidden group">
+                    <div class="h-80 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center">
+                        <i class="fas fa-headset text-8xl text-copper-500/30"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold text-white mb-2">Service Client</h3>
+                        <p class="text-copper-500 mb-4 font-sans tracking-wide">Accompagnement</p>
+                        <p class="text-gray-400 font-light">Une équipe dédiée pour vous accompagner à chaque étape de votre projet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gradient-to-br from-copper-700 via-copper-600 to-copper-700 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Rejoignez nos clients satisfaits</h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto font-light">Découvrez comment CuproFlex peut vous accompagner dans vos projets</p>
+            <a href="index.html#contact" class="bg-dark-900 text-white px-12 py-5 border-2 border-dark-900 hover:bg-transparent hover:border-white transition-all duration-300 inline-block font-sans tracking-wider uppercase font-medium">Nous contacter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-20 pb-8 border-t border-copper-700/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <h3 class="text-3xl font-display font-bold mb-6 text-copper-500">Cupro<span class="text-white">Flex</span></h3>
+                    <p class="text-gray-400 font-light leading-relaxed">Expert en cintrage de tubes en cuivre pour le secteur CVC.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-sans font-medium mb-6 tracking-wider text-copper-500 uppercase">Navigation</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-copper-500 transition-colors font-light">Accueil</a></li>
+                        <li><a href="capacites.html" class="text-gray-400 hover:text-copper-500 transition-colors font-light">Capacités</a></li>
+                        <li><a href="produits.html" class="text-gray-400 hover:text-copper-500 transition-colors font-light">Produits</a></li>
+                        <li><a href="a-propos.html" class="text-gray-400 hover:text-copper-500 transition-colors font-light">À propos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-sans font-medium mb-6 tracking-wider text-copper-500 uppercase">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 font-light">+33 1 23 45 67 89</li>
+                        <li class="text-gray-400 font-light">contact@cuproflex.fr</li>
+                        <li class="text-gray-400 font-light">Paris, France</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-sans font-medium mb-6 tracking-wider text-copper-500 uppercase">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 rounded-full border-2 border-copper-500 flex items-center justify-center hover:bg-copper-500 hover:text-white text-copper-500 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full border-2 border-copper-500 flex items-center justify-center hover:bg-copper-500 hover:text-white text-copper-500 transition-all duration-300">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-copper-700/20 pt-8 text-center">
+                <p class="text-gray-500 text-sm font-light">© 2025 CuproFlex. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
