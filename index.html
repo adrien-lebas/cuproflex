@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuproFlex - Spécialiste du cintrage de tubes cuivre CVC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        copper: {
+                            400: '#E8A87C',
+                            500: '#D4956C',
+                            600: '#C17D5A',
+                            700: '#B87333',
+                        },
+                        dark: {
+                            900: '#0A0A0A',
+                            800: '#121212',
+                            700: '#1A1A1A',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-gray-100">
+    <!-- Barre de navigation -->
+    <nav class="bg-dark-800 border-b border-copper-700/20 fixed w-full z-50 backdrop-blur-sm bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <div class="text-3xl font-display font-bold text-copper-500">Cupro<span class="text-white">Flex</span></div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Accueil</a>
+                    <a href="#services" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Capacités</a>
+                    <a href="#produits" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">Produits</a>
+                    <a href="#a-propos" class="text-gray-300 hover:text-copper-500 font-sans font-light tracking-wide transition-colors">À propos</a>
+                    <a href="#contact" class="bg-copper-600 text-white px-8 py-3 border border-copper-600 hover:bg-transparent hover:text-copper-500 transition-all duration-300 font-sans tracking-wider">CONTACT</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-copper-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="relative bg-dark-900 text-white pt-24">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"></div>
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23B87333\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-6">
+                    <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase">Excellence en Cintrage</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight">
+                    L'Art du <span class="text-copper-500">Cuivre</span><br/>Façonné avec Précision
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 text-gray-400 font-light leading-relaxed max-w-3xl mx-auto">
+                    Solutions de cintrage de tubes en cuivre sur mesure pour l'industrie CVC. Où la technologie rencontre l'artisanat.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-copper-600 text-white px-10 py-4 border-2 border-copper-600 hover:bg-transparent hover:text-copper-500 transition-all duration-300 font-sans tracking-wider uppercase">Demander un devis</a>
+                    <a href="#services" class="bg-transparent text-white px-10 py-4 border-2 border-white hover:bg-white hover:text-dark-900 transition-all duration-300 font-sans tracking-wider uppercase">Nos Capacités</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-copper-500 to-transparent"></div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-dark-800 relative">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\" fill=\"%23B87333\" fill-opacity=\"0.4\" fill-rule=\"evenodd\"%2F%3E%3C%2Fsvg%3E');"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Notre Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Capacités</h2>
+                <div class="w-24 h-px bg-copper-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group bg-dark-700 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-copper-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-bezier-curve text-2xl text-copper-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold mb-4 text-white group-hover:text-copper-500 transition-colors">CNC Tube Bending</h3>
+                        <p class="text-gray-400 font-light leading-relaxed mb-6">Cintrage de tubes en cuivre selon vos spécifications techniques avec une précision au millimètre. Technologie CNC de pointe.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>En savoir plus</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-dark-700 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-copper-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-industry text-2xl text-copper-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold mb-4 text-white group-hover:text-copper-500 transition-colors">End Forming</h3>
+                        <p class="text-gray-400 font-light leading-relaxed mb-6">Capacité de production industrielle pour répondre aux besoins des professionnels du CVC. Solutions personnalisées à grande échelle.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>En savoir plus</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-dark-700 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-copper-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-fire text-2xl text-copper-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-display font-semibold mb-4 text-white group-hover:text-copper-500 transition-colors">Brazing</h3>
+                        <p class="text-gray-400 font-light leading-relaxed mb-6">Tests rigoureux et assemblages de précision pour garantir des produits conformes aux normes les plus exigeantes de l'industrie.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>En savoir plus</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits Section -->
+    <section id="produits" class="py-32 bg-dark-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Notre Gamme</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Produits</h2>
+                <div class="w-24 h-px bg-copper-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-dark-800 border border-copper-700/20 overflow-hidden hover:border-copper-500/50 transition-all duration-500">
+                    <div class="h-64 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-copper-500/5 group-hover:bg-copper-500/10 transition-colors duration-500"></div>
+                        <i class="fas fa-wind text-7xl text-copper-500/30 group-hover:text-copper-500/50 transition-all duration-500 group-hover:scale-110"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold mb-3 text-white">Tubes pour climatisation</h3>
+                        <p class="text-gray-400 mb-6 font-light">Gamme complète de tubes pour systèmes de climatisation haute performance.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>Découvrir</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-dark-800 border border-copper-700/20 overflow-hidden hover:border-copper-500/50 transition-all duration-500">
+                    <div class="h-64 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-copper-500/5 group-hover:bg-copper-500/10 transition-colors duration-500"></div>
+                        <i class="fas fa-fire text-7xl text-copper-500/30 group-hover:text-copper-500/50 transition-all duration-500 group-hover:scale-110"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold mb-3 text-white">Tubes pour chauffage</h3>
+                        <p class="text-gray-400 mb-6 font-light">Solutions pour systèmes de chauffage central et planchers chauffants.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>Découvrir</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-dark-800 border border-copper-700/20 overflow-hidden hover:border-copper-500/50 transition-all duration-500">
+                    <div class="h-64 bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-copper-500/5 group-hover:bg-copper-500/10 transition-colors duration-500"></div>
+                        <i class="fas fa-snowflake text-7xl text-copper-500/30 group-hover:text-copper-500/50 transition-all duration-500 group-hover:scale-110"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-display font-semibold mb-3 text-white">Tubes pour réfrigération</h3>
+                        <p class="text-gray-400 mb-6 font-light">Tubes adaptés aux installations frigorifiques professionnelles.</p>
+                        <a href="#" class="inline-flex items-center text-copper-500 font-sans text-sm tracking-wider uppercase hover:gap-3 gap-2 transition-all">
+                            <span>Découvrir</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="a-propos" class="py-32 bg-dark-800 relative">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23B87333\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Notre Histoire</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-8">À propos de CuproFlex</h2>
+                    <p class="text-gray-400 mb-8 font-light leading-relaxed text-lg">Fondée en 2010, CuproFlex est devenue une référence dans le domaine du cintrage de tubes en cuivre pour le secteur du CVC. Notre engagement envers la qualité et l'innovation nous permet de répondre aux besoins les plus exigeants de nos clients.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start group">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:bg-copper-500/10 transition-colors">
+                                    <i class="fas fa-check text-copper-500"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-sans font-medium mb-1">Expertise reconnue</h4>
+                                <p class="text-gray-400 font-light">Équipe d'experts avec plus de 15 ans d'expérience</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:bg-copper-500/10 transition-colors">
+                                    <i class="fas fa-check text-copper-500"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-sans font-medium mb-1">Technologie de pointe</h4>
+                                <p class="text-gray-400 font-light">Parc machines à la pointe de la technologie</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 rounded-full border-2 border-copper-500 flex items-center justify-center group-hover:bg-copper-500/10 transition-colors">
+                                    <i class="fas fa-check text-copper-500"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-sans font-medium mb-1">Service d'excellence</h4>
+                                <p class="text-gray-400 font-light">Service client réactif et personnalisé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark-700 border border-copper-700/20 p-2 relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-copper-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-dark-800 to-dark-900 overflow-hidden relative">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <i class="fas fa-industry text-8xl text-copper-500/20"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="py-32 bg-dark-900 text-white relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-800 via-dark-900 to-dark-800"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="text-copper-500 font-sans tracking-[0.3em] text-sm font-light uppercase mb-4 block">Témoignages</span>
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-20">Ce que disent nos clients</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-dark-800 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 group">
+                    <div class="text-copper-500 text-3xl mb-6">★★★★★</div>
+                    <p class="text-gray-400 font-light italic mb-6 leading-relaxed">"Service professionnel et réactif. Les produits sont d'une qualité exceptionnelle."</p>
+                    <div class="h-px bg-copper-500/20 mb-6"></div>
+                    <p class="font-sans font-medium text-white">Jean D.</p>
+                    <p class="text-copper-500 text-sm tracking-wider">Installateur CVC</p>
+                </div>
+                <div class="bg-dark-800 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 group">
+                    <div class="text-copper-500 text-3xl mb-6">★★★★★</div>
+                    <p class="text-gray-400 font-light italic mb-6 leading-relaxed">"Notre entreprise travaille avec CuproFlex depuis 5 ans. Fiabilité et qualité au rendez-vous."</p>
+                    <div class="h-px bg-copper-500/20 mb-6"></div>
+                    <p class="font-sans font-medium text-white">Marie L.</p>
+                    <p class="text-copper-500 text-sm tracking-wider">Responsable Achats</p>
+                </div>
+                <div class="bg-dark-800 border border-copper-700/20 p-10 hover:border-copper-500/50 transition-all duration-500 group">
+                    <div class="text-copper-500 text-3xl mb-6">★★★★★</div>
+                    <p class="text-gray-400 font-light italic mb-6 leading-relaxed">"Des conseils avisés et un accompagnement personnalisé. Je recommande vivement."</p>
+                    <div class="h-px bg-copper-500/20 mb-6"></div>
+                    <p class="font-sans font-medium text-white">Thomas P.</p>
+                    <p class="text-copper-500 text-sm tracking-wider">Artisan chauffagiste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Contactez-nous</h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos projets.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition font-medium">Envoyer le message</button>
+                    </form>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-6">Coordonnées</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-blue-600 mr-4">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Adresse</h4>
+                                <p class="text-gray-600">123 Rue de l'Industrie<br>75000 Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-blue-600 mr-4">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Téléphone</h4>
+                                <p class="text-gray-600">+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-blue-600 mr-4">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Email</h4>
+                                <p class="text-gray-600">contact@cuproflex.fr</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-blue-600 mr-4">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Horaires d'ouverture</h4>
+                                <p class="text-gray-600">Lun - Ven : 8h00 - 18h00<br>Sam : 9h00 - 12h00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-medium text-gray-900 mb-4">Suivez-nous</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-pink-600 hover:text-pink-800">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à démarrer votre projet ?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Contactez-nous dès aujourd'hui pour discuter de vos besoins en cintrage de tubes en cuivre.</p>
+            <a href="#contact" class="bg-orange-500 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-orange-600 transition inline-block">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Cupro<span class="text-orange-500">Flex</span></h3>
+                    <p class="text-gray-400">Expert en cintrage de tubes en cuivre pour le secteur CVC. Qualité, précision et innovation depuis 2010.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#produits" class="text-gray-400 hover:text-white transition">Produits</a></li>
+                        <li><a href="#a-propos" class="text-gray-400 hover:text-white transition">À propos</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cintrage de précision</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Production en série</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Conception sur mesure</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contrôle qualité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Livraison</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Abonnez-vous à notre newsletter pour recevoir nos actualités et offres spéciales.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Votre email" class="px-4 py-2 w-full rounded-l-md text-gray-900 focus:outline-none">
+                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-4 rounded-r-md transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 CuproFlex. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Mentions légales</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Conditions générales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'hidden md:hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-4 right-4 text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col items-center space-y-6">
+                <a href="#accueil" class="text-xl font-medium hover:text-blue-600">Accueil</a>
+                <a href="#services" class="text-xl font-medium hover:text-blue-600">Services</a>
+                <a href="#produits" class="text-xl font-medium hover:text-blue-600">Produits</a>
+                <a href="#a-propos" class="text-xl font-medium hover:text-blue-600">À propos</a>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-medium hover:bg-blue-700 transition">Contact</a>
+            </div>
+        `;
+        
+        mobileMenuButton.addEventListener('click', () => {
+            document.body.style.overflow = 'hidden';
+            document.body.appendChild(mobileMenu);
+            mobileMenu.classList.remove('hidden');
+            
+            const closeButton = mobileMenu.querySelector('button');
+            closeButton.addEventListener('click', () => {
+                document.body.style.overflow = '';
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        document.body.style.overflow = '';
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
